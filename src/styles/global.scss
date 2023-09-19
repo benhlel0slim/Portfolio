@@ -1,0 +1,8 @@
+@use "variables" as v;
+
+body {
+  font-family: Atkinson Hyperlegible, Arial, Helvetica, sans-serif;
+  background-color: v.$background-color;
+  height: 100%;
+  color: v.$text-color;
+}

@@ -1,0 +1,16 @@
+$primary-color: #73d6c3;
+$background-color: #041622;
+$accent-color: #f67f66;
+$surface-color: #0e2539;
+$text-color: #cdd3d8;
+$box-shadow: 0px 4px 4px 0px #00000040;
+$grey-vscode: #4f5055;
+
+:export {
+  primaryColor: $primary-color;
+  backgroundColor: $background-color;
+  accent: $accent-color;
+  surface: $surface-color;
+  textColor: $text-color;
+  boxShadow: $box-shadow;
+}

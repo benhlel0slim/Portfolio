@@ -1,0 +1,14 @@
+.wrapperContainer {
+  position: relative;
+  color: $text-color;
+
+  p {
+    position: absolute;
+    margin: 0;
+    left: 40px;
+    padding-left: 3px;
+    padding-right: 3px;
+    bottom: 0px;
+    background-color: $background-color;
+  }
+}

@@ -1,0 +1,52 @@
+.container {
+  position: relative;
+  width: 100%;
+}
+.inner {
+  display: flex;
+  flex-direction: row;
+  width: 70%;
+  margin: auto;
+  height: 100vh;
+}
+.bio {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: larger;
+}
+.img {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.email {
+  position: absolute;
+  bottom: 46px;
+  left: 0;
+  font-size: small;
+  text-decoration: none;
+}
+.arrow {
+  position: absolute;
+  bottom: 45px;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.verticalLine {
+  position: absolute;
+  right: 32px;
+  bottom: 45px;
+}
+.github {
+  position: absolute;
+  right: 19px;
+  bottom: 90px;
+  background-color: $background-color;
+}
+.linkedIn {
+  position: absolute;
+  right: 19px;
+  bottom: 14px;
+}

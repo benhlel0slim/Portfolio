@@ -8,7 +8,7 @@ function NavBar() {
   return (
     <header className={styles.container}>
       <h1>
-        <Link href="#home">
+        <Link href="/">
           <Image className={styles.logo} src={navIcon} alt="logo" />
         </Link>
       </h1>

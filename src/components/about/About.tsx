@@ -2,9 +2,10 @@ import React from "react";
 import Tag from "../tag/Tag";
 import styles from "./about.module.scss";
 import Arrow from "../arrow/Arrow";
+
 function About() {
   return (
-    <section className={styles.container}>
+    <article id="about" className={styles.container}>
       <div className={styles.openingTag}>
         <Arrow className={styles.arrow} />
         <Tag type="opening">About</Tag>
@@ -25,7 +26,7 @@ function About() {
       <div className={styles.closingTag}>
         <Tag type="closing">About</Tag>
       </div>
-    </section>
+    </article>
   );
 }
 

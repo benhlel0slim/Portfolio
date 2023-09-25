@@ -1,7 +1,7 @@
 import React from "react";
 import Tag from "../tag/Tag";
-import styles from "./about.module.scss";
 import Arrow from "../arrow/Arrow";
+import styles from "./about.module.scss";
 
 function About() {
   return (

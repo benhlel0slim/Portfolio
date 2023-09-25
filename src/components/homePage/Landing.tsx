@@ -34,10 +34,10 @@ function Landing() {
       <div className={styles.socialMedia}>
         <VerticalLine className={styles.verticalLine} />
         <Link href={"https://github.com/benhlel0slim"}>
-          <Github className={styles.github} />
+          <Github className={`${styles.github} ${styles.socials}`} />
         </Link>
         <Link href={"https://www.linkedin.com/in/selim-ben-hlel-4ab444254/"}>
-          <LinkedIn className={styles.linkedIn} />
+          <LinkedIn className={`${styles.linkedIn} ${styles.socials}`} />
         </Link>
       </div>
     </section>

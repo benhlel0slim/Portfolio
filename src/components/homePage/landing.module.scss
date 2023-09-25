@@ -39,19 +39,23 @@
   right: 33px;
   bottom: 31px;
 }
+
 .verticalLine {
   position: absolute;
   right: 32px;
   bottom: 45px;
 }
-.github {
+
+.socials {
   position: absolute;
-  right: 19px;
-  bottom: 90px;
-  background-color: $background-color;
-}
-.linkedIn {
-  position: absolute;
-  right: 19px;
-  bottom: 14px;
+  @include hover-effect;
+  &.github {
+    right: 19px;
+    bottom: 90px;
+    background-color: $background-color;
+  }
+  &.linkedIn {
+    right: 19px;
+    bottom: 14px;
+  }
 }

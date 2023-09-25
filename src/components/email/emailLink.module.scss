@@ -1,6 +1,6 @@
 .wrapperContainer {
   position: relative;
-  color: $text-color;
+  @include hover-effect;
 
   p {
     position: absolute;

@@ -1,0 +1,83 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  min-height: 20vh;
+  background-color: $surface-color;
+  text-align: start;
+  padding: 15px 170px;
+}
+.openingTag {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 5px;
+}
+.arrow {
+  color: $grey-vscode;
+  scale: 0.4;
+  rotate: 270deg;
+  animation: rotateArrow 4s;
+  animation-fill-mode: forwards;
+}
+.text {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: small;
+  opacity: 0;
+  animation: showHide 2s 2s;
+  animation-fill-mode: forwards;
+
+  .vl {
+    border-left: 2px solid $grey-vscode;
+    height: 484px;
+    margin-right: 20px;
+    margin-left: 25px;
+  }
+}
+.closingTag {
+  position: relative;
+  left: 25px;
+  margin: 5px;
+  animation: slide 2s ease-in-out;
+  animation-fill-mode: forwards;
+}
+.techIcons {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 29px;
+  margin-left: 69px;
+  align-items: center;
+  justify-content: center;
+}
+
+@keyframes slide {
+  from {
+    transform: translateY(-100px);
+  }
+
+  to {
+    transform: translateY(0px);
+  }
+}
+@keyframes showHide {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes rotateArrow {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(90deg);
+  }
+}

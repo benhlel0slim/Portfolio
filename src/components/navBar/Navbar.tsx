@@ -1,5 +1,5 @@
 import Image from "next/image";
-import navIcon from "../../assets/navIcon.svg";
+import navIcon from "../../../public/assets/navIcon.svg";
 import Link from "next/link";
 import styles from "./navBar.module.scss";
 import Tag from "../tag/Tag";

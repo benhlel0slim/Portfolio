@@ -11,7 +11,7 @@ function About() {
         <Tag type="opening">About</Tag>
       </div>
       <div className={styles.text}>
-        <span className={styles.vl}></span>
+        <span className={styles.vl} />
         <p>
           I am 33 years old Tunisian software developer. I have a diploma in
           architecture engineering, but I decided to switch to front-end

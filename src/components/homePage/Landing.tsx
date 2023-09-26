@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./landing.module.scss";
 import Image from "next/image";
-import profilePicture from "../../assets/profilePicture.svg";
+import profilePicture from "../../../public/assets/profilePicture.svg";
 import Link from "next/link";
 import { EMAIL } from "@/constant/mail";
 import EmailLink from "../email/emailLink";

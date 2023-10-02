@@ -4,24 +4,28 @@
   align-items: baseline;
   width: 70%;
   margin: auto;
-  min-height: 20vh;
+  min-height: 17vh;
   background-color: $surface-color;
   border-radius: 20px;
   text-align: start;
   padding: 15px 20px;
+  margin-top: 20px;
 }
 .openingTag {
   display: flex;
   flex-direction: row;
   align-items: center;
   margin: 5px;
+  color: $primary-color;
 }
 .arrow {
   color: $grey-vscode;
   scale: 0.4;
   rotate: 270deg;
-  animation: rotateArrow 4s;
-  animation-fill-mode: forwards;
+  &.animate {
+    animation: rotateArrow 4s;
+    animation-fill-mode: forwards;
+  }
 }
 .text {
   display: flex;
@@ -29,8 +33,10 @@
   align-items: center;
   font-size: medium;
   opacity: 0;
-  animation: showHide 2s 2s;
-  animation-fill-mode: forwards;
+  &.animate {
+    animation: showHide 2s 2s;
+    animation-fill-mode: forwards;
+  }
 
   .vl {
     border-left: 2px solid $grey-vscode;
@@ -43,8 +49,11 @@
   position: relative;
   left: 25px;
   margin: 5px;
-  animation: slide 2s ease-in-out;
-  animation-fill-mode: forwards;
+  color: $primary-color;
+  &.animate {
+    animation: slide 2s ease-in-out;
+    animation-fill-mode: forwards;
+  }
 }
 
 @keyframes slide {

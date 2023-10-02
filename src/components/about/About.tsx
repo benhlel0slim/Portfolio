@@ -1,16 +1,22 @@
-import React from "react";
+"use client";
+import React, { useRef } from "react";
 import Tag from "../tag/Tag";
 import Arrow from "../arrow/Arrow";
 import styles from "./about.module.scss";
+import { useIsVisible } from "@/hook/useIsVisible";
 
 function About() {
+  const ref = useRef<HTMLElement>(null);
+  const { hasIntersected } = useIsVisible(ref);
   return (
-    <article id="about" className={styles.container}>
+    <article ref={ref} id="about" className={styles.container}>
       <div className={styles.openingTag}>
-        <Arrow className={styles.arrow} />
+        <Arrow
+          className={`${styles.arrow} ${hasIntersected ? styles.animate : ""}`}
+        />
         <Tag type="opening">About</Tag>
       </div>
-      <div className={styles.text}>
+      <div className={`${styles.text} ${hasIntersected ? styles.animate : ""}`}>
         <span className={styles.vl} />
         <p>
           I am 33 years old Tunisian software developer. I have a diploma in
@@ -23,7 +29,11 @@ function About() {
           passages.
         </p>
       </div>
-      <div className={styles.closingTag}>
+      <div
+        className={`${styles.closingTag} ${
+          hasIntersected ? styles.animate : ""
+        }`}
+      >
         <Tag type="closing">About</Tag>
       </div>
     </article>

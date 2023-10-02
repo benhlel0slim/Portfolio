@@ -2,7 +2,7 @@ import About from "@/components/about/About";
 import Footer from "@/components/footer/Footer";
 import Landing from "@/components/homePage/Landing";
 import NavBar from "@/components/navBar/Navbar";
-import Project from "@/components/projects/Project";
+import Projects from "@/components/projects/Projects";
 import Techs from "@/components/techs/Techs";
 
 export default function Home() {
@@ -11,7 +11,7 @@ export default function Home() {
       <NavBar />
       <Landing />
       <About />
-      <Project />
+      <Projects />
       <Techs />
       <Footer />
     </main>

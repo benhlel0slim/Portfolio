@@ -1,7 +1,6 @@
 import React from "react";
 import styles from "./landing.module.scss";
 import Image from "next/image";
-import profilePicture from "../../../public/assets/profilePicture.svg";
 import Link from "next/link";
 import { EMAIL } from "@/constant/mail";
 import EmailLink from "../email/emailLink";
@@ -24,7 +23,12 @@ function Landing() {
           </p>
         </div>
         <div className={styles.img}>
-          <Image src={profilePicture} alt="selim ben hlel picture portrait" />
+          <Image
+            src={"/assets/profilePicture.svg"}
+            alt="selim ben hlel picture portrait"
+            width={379}
+            height={366}
+          />
         </div>
       </div>
       <Link className={styles.email} href={EMAIL}>

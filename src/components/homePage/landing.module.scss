@@ -5,7 +5,7 @@
 .inner {
   display: flex;
   flex-direction: row;
-  width: 70%;
+  width: 50%;
   margin: auto;
   height: 100vh;
 }
@@ -14,12 +14,14 @@
   flex-direction: column;
   justify-content: center;
   font-size: larger;
+  h2 {
+    margin: 10px 0 10px 0;
+  }
 }
 .img {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: auto;
 }
 .email {
   position: absolute;

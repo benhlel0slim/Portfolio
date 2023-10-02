@@ -1,0 +1,98 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  min-height: 20vh;
+  background-color: $background-color;
+  text-align: start;
+  padding: 15px 170px;
+  margin-top: 80px;
+}
+.openingTag {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 5px;
+  color: $primary-color;
+}
+.arrow {
+  color: $grey-vscode;
+  scale: 0.4;
+  rotate: 270deg;
+  &.animate {
+    animation: rotateArrow 4s;
+    animation-fill-mode: forwards;
+  }
+}
+.text {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: small;
+  opacity: 0;
+  &.animate {
+    animation: showHide 2s 2s;
+    animation-fill-mode: forwards;
+  }
+
+  .vl {
+    border-left: 2px solid $grey-vscode;
+    height: 500px;
+    margin-right: 20px;
+    margin-left: 25px;
+  }
+}
+.closingTag {
+  position: relative;
+  left: 25px;
+  margin: 5px;
+  color: $primary-color;
+  &.animate {
+    animation: slide 2s ease-in-out;
+    animation-fill-mode: forwards;
+  }
+}
+
+@keyframes slide {
+  from {
+    transform: translateY(-500px);
+  }
+
+  to {
+    transform: translateY(0px);
+  }
+}
+@keyframes showHide {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes rotateArrow {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(90deg);
+  }
+}
+.projects {
+  scroll-snap-type: x mandatory;
+  overflow-x: scroll;
+  display: flex;
+  width: 200px;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  .img {
+    flex: 0 0 200px;
+    border-radius: 20px;
+  }
+}

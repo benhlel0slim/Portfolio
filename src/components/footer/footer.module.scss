@@ -17,4 +17,8 @@
   margin: auto;
   font-style: italic;
   font-size: small;
+  a {
+    @include hover-effect-tech;
+    color: $text-color;
+  }
 }

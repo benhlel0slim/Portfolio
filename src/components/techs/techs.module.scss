@@ -6,19 +6,23 @@
   background-color: $surface-color;
   text-align: start;
   padding: 15px 170px;
+  margin-top: 80px;
 }
 .openingTag {
   display: flex;
   flex-direction: row;
   align-items: center;
   margin: 5px;
+  color: $primary-color;
 }
 .arrow {
   color: $grey-vscode;
   scale: 0.4;
   rotate: 270deg;
-  animation: rotateArrow 4s;
-  animation-fill-mode: forwards;
+  &.animate {
+    animation: rotateArrow 4s;
+    animation-fill-mode: forwards;
+  }
 }
 .text {
   display: flex;
@@ -26,8 +30,10 @@
   align-items: center;
   font-size: small;
   opacity: 0;
-  animation: showHide 2s 2s;
-  animation-fill-mode: forwards;
+  &.animate {
+    animation: showHide 2s 2s;
+    animation-fill-mode: forwards;
+  }
 
   .vl {
     border-left: 2px solid $grey-vscode;
@@ -40,21 +46,24 @@
   position: relative;
   left: 25px;
   margin: 5px;
-  animation: slide 2s ease-in-out;
-  animation-fill-mode: forwards;
+  color: $primary-color;
+  &.animate {
+    animation: slide 2s ease-in-out;
+    animation-fill-mode: forwards;
+  }
 }
 .techIcons {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: repeat(2, 1fr);
   gap: 52px 29px;
-  margin-left: 300px;
+  margin-left: 31px;
   align-items: center;
 }
 
 @keyframes slide {
   from {
-    transform: translateY(-100px);
+    transform: translateY(-484px);
   }
 
   to {

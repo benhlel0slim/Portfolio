@@ -68,3 +68,14 @@
     bottom: 14px;
   }
 }
+@media (max-width: 1024px) {
+  .inner {
+    width: 50%;
+  }
+  .img {
+    scale: 0.7;
+  }
+  .bio {
+    font-size: 80%;
+  }
+}

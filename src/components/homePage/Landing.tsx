@@ -18,8 +18,8 @@ function Landing() {
           <h2>I create things on the web.</h2>
           <p>
             Hello ! I am a JavaScript developer specializing in user interfaces
-            <br />
-            and front end. I build web apps with the user in mind.
+            and front-end based in Tunisia 📍.
+            <br /> I build web apps 🌐 with the user in mind.
           </p>
         </div>
         <div className={styles.img}>

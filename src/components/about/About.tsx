@@ -19,14 +19,14 @@ function About() {
       <div className={`${styles.text} ${hasIntersected ? styles.animate : ""}`}>
         <span className={styles.vl} />
         <p>
-          I am 33 years old Tunisian software developer. I have a diploma in
-          architecture engineering, but I decided to switch to front-end
-          development instead. Taking from my architecture background, I apply
-          the same centered design approach to build websites. is simply dummy
-          text of the printing and typesetting industry. Software like Aldus
-          PageMaker including versions of Lorem Ipsum. It was popularised in the
-          1960s with the release of Letraset sheets containing Lorem Ipsum
-          passages.
+          At 32 years old, I&apos;ve embarked on a dynamic journey in the world
+          of front-end development, transitioning from my background as an
+          architect to crafting immersive digital experiences. While my initial
+          career was rooted in the creation of physical spaces 🏗️, I soon
+          discovered my deep fascination with the ever-evolving digital
+          landscape 💻. The limitless potential for creativity and
+          problem-solving in web development, particularly with JavaScript, drew
+          me in, and I made the exciting shift to become a front-end developer.
         </p>
       </div>
       <div

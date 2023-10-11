@@ -19,7 +19,6 @@ export function useIsVisible(ref: React.RefObject<HTMLElement>) {
   useEffect(() => {
     if (isIntersecting && !hasIntersected) {
       setHasIntersected(true);
-      console.log("updating");
     }
   }, [isIntersecting, hasIntersected]);
 

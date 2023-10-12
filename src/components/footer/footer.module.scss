@@ -9,16 +9,26 @@
 }
 .email {
   position: relative;
-  left: 0;
+  left: -740px;
   font-size: small;
   top: 50px;
 }
 .text {
   margin: auto;
   font-style: italic;
-  font-size: small;
+  font-size: 13px;
   a {
     @include hover-effect-tech;
     color: $text-color;
+  }
+}
+@media (max-width: 768px) {
+  .text {
+    font-size: 7px;
+  }
+  .email {
+    scale: 0.5;
+    left: -310px;
+    top: 23px;
   }
 }

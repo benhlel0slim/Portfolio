@@ -1,22 +1,20 @@
-import { ProjectImage } from "@/types/project";
+import { ProjectImage as Props } from "@/types/project";
 import React from "react";
-import Image from "next/image";
+import NextImage from "next/image";
 import styles from "./projectImage.module.scss";
 
-function ProjectImage({ alt, src }: ProjectImage) {
+function Image({ alt, src }: Props) {
   return (
-    <div>
-      <Image
-        className={styles.img}
-        src={src}
-        alt={alt}
-        width={0}
-        height={0}
-        sizes="400px"
-        style={{ width: "200px", height: "auto" }} // optional
-      />
-    </div>
+    <NextImage
+      className={styles.img}
+      src={src}
+      alt={alt}
+      width={0}
+      height={0}
+      sizes="400px"
+      style={{ width: "200px", height: "auto" }} // optional
+    />
   );
 }
 
-export default ProjectImage;
+export default Image;

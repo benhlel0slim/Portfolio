@@ -1,18 +1,16 @@
-import { Project } from "@/types/project";
+import { Project as Props } from "@/types/project";
 import React from "react";
 import Tag from "../tag/Tag";
 import Link from "next/link";
 import Badge from "../badge/badge";
 import styles from "./project.module.scss";
-import ProjectImage from "../projectImage/ProjectImage";
+import Images from "../images/Images";
 
-function Project({ title, images, description, url, techs }: Project) {
+function Project({ title, images, description, url, techs }: Props) {
   return (
-    <div className={styles.container}>
+    <article className={styles.container}>
       <div className={styles.projectImage}>
-        {images.map((image) => (
-          <ProjectImage {...image} key={image.src} />
-        ))}
+        <Images images={images} />
       </div>
       <div>
         <div className={styles.text}>
@@ -20,7 +18,6 @@ function Project({ title, images, description, url, techs }: Project) {
           <p>{description}</p>
         </div>
         <div className={styles.links}>
-          {" "}
           <Link href={url.source} target="_blank" className={styles.link}>
             Check Source
           </Link>
@@ -35,7 +32,7 @@ function Project({ title, images, description, url, techs }: Project) {
           ))}
         </div>
       </div>
-    </div>
+    </article>
   );
 }
 

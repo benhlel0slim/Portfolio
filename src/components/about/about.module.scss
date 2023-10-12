@@ -9,9 +9,9 @@
   border-radius: 20px;
   text-align: start;
   padding: 15px 20px;
-  margin-top: 20px;
+  margin-top: 10%;
   box-shadow: $box-shadow;
-  margin-bottom: 80px;
+  margin-bottom: 20%;
 }
 .openingTag {
   display: flex;
@@ -87,11 +87,17 @@
   }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 768px) {
   .text {
-    font-size: 70%;
+    font-size: 12px;
   }
   .container {
-    width: 50%;
+    width: 70%;
+  }
+  .openingTag {
+    font-size: 12px;
+  }
+  .closingTag {
+    font-size: 12px;
   }
 }

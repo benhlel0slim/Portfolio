@@ -8,7 +8,7 @@ import Images from "../images/Images";
 
 function Project({ title, images, description, url, techs }: Props) {
   return (
-    <article className={styles.container}>
+    <section className={styles.container}>
       <div className={styles.projectImage}>
         <Images images={images} />
       </div>
@@ -32,7 +32,7 @@ function Project({ title, images, description, url, techs }: Props) {
           ))}
         </div>
       </div>
-    </article>
+    </section>
   );
 }
 

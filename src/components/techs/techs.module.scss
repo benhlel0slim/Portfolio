@@ -5,8 +5,8 @@
   min-height: 20vh;
   background-color: $surface-color;
   text-align: start;
-  padding: 15px 170px;
-  margin-top: 80px;
+  width: 80%;
+  margin-top: 5%;
 }
 .openingTag {
   display: flex;
@@ -29,6 +29,7 @@
   flex-direction: row;
   align-items: center;
   font-size: small;
+  height: 400px;
   opacity: 0;
   &.animate {
     animation: showHide 2s 2s;
@@ -37,7 +38,7 @@
 
   .vl {
     border-left: 2px solid $grey-vscode;
-    height: 484px;
+    height: 100%;
     margin-right: 20px;
     margin-left: 25px;
   }
@@ -58,7 +59,7 @@
   grid-template-rows: repeat(2, 1fr);
   gap: 52px 29px;
   align-items: center;
-  margin-left: 15%;
+  margin: 10%;
 }
 
 @keyframes slide {
@@ -87,5 +88,24 @@
 
   to {
     transform: rotate(90deg);
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+  }
+  .openingTag {
+    font-size: 12px;
+  }
+  .closingTag {
+    font-size: 12px;
+  }
+  .techIcons {
+    scale: 0.5;
+    position: relative;
+    right: 250px;
+  }
+  .text {
+    height: 200px;
   }
 }

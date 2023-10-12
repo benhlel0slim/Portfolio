@@ -13,7 +13,7 @@ export const TECHS: Techs[] = [
   },
   {
     name: "Typescript",
-    src: "/assets/typescript.svg",
+    src: "/assets/typeScript.svg",
     url: "https://www.typescriptlang.org/",
   },
   {
@@ -48,7 +48,7 @@ export const TECHS: Techs[] = [
   },
   {
     name: "Eslint",
-    src: "/assets/eslint.svg",
+    src: "/assets/esLint.svg",
     url: "https://eslint.org/",
   },
   {

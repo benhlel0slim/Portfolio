@@ -11,13 +11,14 @@ import LinkedIn from "../socialMedia/LinkedIn";
 
 function Landing() {
   return (
-    <section className={styles.container}>
-      <div className={styles.inner}>
+    <article className={styles.container}>
+      <section className={styles.inner}>
         <div className={styles.bio}>
           <h1>Selim Ben Hlel.</h1>
           <h2>I create things on the web.</h2>
           <p>
             Hello ! I am a JavaScript developer specializing in user interfaces
+            <br />
             and front-end based in Tunisia 📍.
             <br /> I build web apps 🌐 with the user in mind.
           </p>
@@ -30,7 +31,7 @@ function Landing() {
             height={366}
           />
         </div>
-      </div>
+      </section>
       <Link className={styles.email} href={EMAIL}>
         <EmailLink />
       </Link>
@@ -44,7 +45,7 @@ function Landing() {
           <LinkedIn className={`${styles.linkedIn} ${styles.socials}`} />
         </Link>
       </div>
-    </section>
+    </article>
   );
 }
 

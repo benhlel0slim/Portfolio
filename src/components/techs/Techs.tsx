@@ -12,26 +12,34 @@ function Techs() {
   const { hasIntersected } = useIsVisible(ref);
   return (
     <article id="tech" ref={ref} className={styles.container}>
-      <div className={styles.openingTag}>
-        <Arrow
-          className={`${styles.arrow} ${hasIntersected ? styles.animate : ""}`}
-        />
-        <Tag type="opening">Tech</Tag>
-      </div>
-      <div className={`${styles.text} ${hasIntersected ? styles.animate : ""}`}>
-        <span className={styles.vl}></span>
-        <div className={styles.techIcons}>
-          {TECHS.map(({ name, src, url }) => (
-            <Tech key={name} name={name} src={src} url={url} />
-          ))}
+      <div className={styles.inner}>
+        <div className={styles.openingTag}>
+          <Arrow
+            className={`${styles.arrow} ${
+              hasIntersected ? styles.animate : ""
+            }`}
+          />
+          <Tag type="opening">Tech</Tag>
         </div>
-      </div>
-      <div
-        className={`${styles.closingTag} ${
-          hasIntersected ? styles.animate : ""
-        }`}
-      >
-        <Tag type="closing">Tech</Tag>
+
+        <div
+          className={`${styles.text} ${hasIntersected ? styles.animate : ""}`}
+        >
+          <span className={styles.vl} />
+          <div className={styles.techIcons}>
+            {TECHS.map(({ name, src, url }) => (
+              <Tech key={name} name={name} src={src} url={url} />
+            ))}
+          </div>
+        </div>
+
+        <div
+          className={`${styles.closingTag} ${
+            hasIntersected ? styles.animate : ""
+          }`}
+        >
+          <Tag type="closing">Tech</Tag>
+        </div>
       </div>
     </article>
   );

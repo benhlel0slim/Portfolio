@@ -3,11 +3,13 @@
   flex-direction: column;
   justify-content: center;
   text-align: center;
+  width: 100%;
+  height: auto;
   @include hover-effect-tech;
   a {
     color: $text-color;
     text-decoration: none;
-    font-size: medium;
+    font-size: small;
   }
   p {
     padding: 5px;

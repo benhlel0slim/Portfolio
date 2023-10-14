@@ -1,9 +1,9 @@
 body {
   font-family: Atkinson Hyperlegible, Arial, Helvetica, sans-serif;
   background-color: $background-color;
-  height: 100%;
   color: $text-color;
   margin: 0;
+  padding: 0;
 }
 a {
   &:link {

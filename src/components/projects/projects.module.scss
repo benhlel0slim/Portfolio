@@ -4,7 +4,6 @@
   align-items: baseline;
   min-height: 20vh;
   background-color: $background-color;
-  text-align: start;
   width: 80%;
 }
 .openingTag {
@@ -83,7 +82,7 @@
 }
 @media (max-width: 768px) {
   .container {
-    width: 90%;
+    width: 85%;
   }
   .openingTag {
     font-size: 12px;

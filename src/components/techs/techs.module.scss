@@ -1,12 +1,15 @@
 .container {
+  background-color: $surface-color;
+  width: 100%;
+  margin-top: 5%;
+}
+.inner {
   display: flex;
   flex-direction: column;
-  align-items: baseline;
-  min-height: 20vh;
-  background-color: $surface-color;
-  text-align: start;
   width: 80%;
-  margin-top: 5%;
+  margin-left: 9%;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 .openingTag {
   display: flex;
@@ -28,7 +31,7 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  font-size: small;
+
   height: 400px;
   opacity: 0;
   &.animate {
@@ -56,10 +59,11 @@
 .techIcons {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  gap: 52px 29px;
+  gap: 10px;
   align-items: center;
-  margin: 10%;
+  width: 80%;
+  height: auto;
+  margin: auto;
 }
 
 @keyframes slide {
@@ -91,9 +95,6 @@
   }
 }
 @media (max-width: 768px) {
-  .container {
-    width: 90%;
-  }
   .openingTag {
     font-size: 12px;
   }
@@ -101,11 +102,11 @@
     font-size: 12px;
   }
   .techIcons {
-    scale: 0.5;
-    position: relative;
-    right: 250px;
+    scale: 0.9;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
   }
-  .text {
-    height: 200px;
+  .container {
+    width: 100%;
   }
 }

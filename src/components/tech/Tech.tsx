@@ -6,12 +6,12 @@ import styles from "./tech.module.scss";
 
 function Tech({ name, src, url }: Techs) {
   return (
-    <div className={styles.container}>
+    <section className={styles.container}>
       <Link href={url} target="_blank">
-        <Image src={src} alt={`logo of ${name}`} width={100} height={100} />
+        <Image src={src} alt={`logo of ${name}`} width={80} height={80} />
         <p>{name}</p>
       </Link>
-    </div>
+    </section>
   );
 }
 

@@ -1,6 +1,6 @@
 .container {
   position: relative;
-  width: 100%;
+  width: 120%;
 }
 .inner {
   display: flex;
@@ -27,7 +27,6 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  scale: 1.2;
 }
 .email {
   position: absolute;
@@ -70,12 +69,10 @@
   }
 }
 @media (max-width: 768px) {
-  .inner {
-    margin-left: 10%;
-  }
   .bio {
     font-size: 23px;
-
+    width: 60%;
+    margin-left: 21%;
     h2 {
       font-size: 18px;
     }
@@ -85,6 +82,7 @@
   }
   .img {
     scale: 0.7;
+    margin-left: -75px;
   }
   .arrow {
     scale: 0.7;

@@ -7,14 +7,3 @@
   margin-right: auto;
   width: auto;
 }
-
-@media (max-width: 425px) {
-  .main {
-    width: 150%;
-  }
-}
-@media (max-width: 320px) {
-  .main {
-    width: 175%;
-  }
-}

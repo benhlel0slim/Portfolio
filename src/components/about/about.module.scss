@@ -33,6 +33,7 @@
   flex-direction: row;
   align-items: center;
   font-size: medium;
+  height: 88px;
   opacity: 0;
   &.animate {
     animation: showHide 2s 2s;
@@ -41,7 +42,7 @@
 
   .vl {
     border-left: 2px solid $grey-vscode;
-    height: 88px;
+    height: 100%;
     margin-right: 20px;
     margin-left: 25px;
   }
@@ -87,11 +88,11 @@
 }
 
 @media (max-width: 768px) {
-  .text {
-    font-size: 12px;
-  }
   .container {
     width: 70%;
+  }
+  .text {
+    font-size: 9px;
   }
   .openingTag {
     font-size: 12px;

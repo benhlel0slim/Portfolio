@@ -25,20 +25,22 @@
 .text {
   display: flex;
   flex-direction: row;
-  align-items: center;
-  height: 400px;
-
+  align-items: stretch;
+  height: fit-content;
   opacity: 0;
+  > *:nth-child(2) {
+    padding: 20px 0;
+  }
+
   &.animate {
     animation: showHide 2s 2s;
     animation-fill-mode: forwards;
   }
 
   .vl {
-    border-left: 2px solid $grey-vscode;
-    height: 100%;
-    margin-right: 20px;
-    margin-left: 25px;
+    border-right: 2px solid #4f5055;
+    height: auto;
+    padding-left: 20px;
   }
 }
 .closingTag {
@@ -80,6 +82,7 @@
     transform: rotate(90deg);
   }
 }
+
 @media (max-width: 768px) {
   .container {
     width: 85%;

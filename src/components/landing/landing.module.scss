@@ -2,13 +2,14 @@
   position: relative;
   width: 100%;
 }
+
 .inner {
   display: flex;
-  flex-direction: row;
   justify-content: center;
   align-items: center;
   height: 100vh;
 }
+
 .bio {
   display: flex;
   flex-direction: column;
@@ -16,32 +17,28 @@
   font-size: 37px;
   width: 40%;
   h2 {
-    margin: 10px 0 10px 0;
     font-size: 32px;
+    padding: 10px 0;
   }
   p {
     font-size: 22px;
   }
 }
-.img {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
+
 .email {
   position: absolute;
-  bottom: 30px;
-  left: 0;
+  bottom: 35px;
+  left: 0%;
   font-size: 13px;
   text-decoration: none;
 }
+
 .arrow {
   position: absolute;
   bottom: 45px;
-  left: 0;
-  right: 0;
-  margin: auto;
+  left: 49%;
 }
+
 .socialMedia {
   position: fixed;
   right: 33px;
@@ -68,11 +65,11 @@
     bottom: 14px;
   }
 }
+
 @media (max-width: 768px) {
   .bio {
     font-size: 23px;
-    width: 60%;
-    margin-left: 21%;
+    padding-left: 15%;
     h2 {
       font-size: 18px;
     }
@@ -80,17 +77,61 @@
       font-size: 12px;
     }
   }
+
   .img {
     scale: 0.7;
-    margin-left: -75px;
   }
+
   .arrow {
     scale: 0.7;
     bottom: 30px;
   }
+
   .socialMedia {
     scale: 0.7;
-    bottom: 0px;
+    bottom: 20px;
     right: 15px;
+  }
+
+  .email {
+    font-size: 12px;
+    bottom: 30px;
+  }
+}
+
+@media (max-width: 425px) {
+  .inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+
+  .bio {
+    font-size: 19px;
+    width: auto;
+    padding-left: 0;
+    h2 {
+      font-size: 14px;
+    }
+    p {
+      font-size: 10px;
+    }
+  }
+
+  .img {
+    scale: 0.6;
+  }
+
+  .arrow {
+    scale: 0.5;
+  }
+
+  .socialMedia {
+    right: 10px;
+  }
+
+  .email {
+    scale: 0.6;
+    left: -40px;
   }
 }

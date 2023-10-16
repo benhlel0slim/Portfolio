@@ -23,7 +23,9 @@ function Techs() {
         </div>
 
         <div
-          className={`${styles.text} ${hasIntersected ? styles.animate : ""}`}
+          className={`${styles.iconContainer} ${
+            hasIntersected ? styles.animate : ""
+          }`}
         >
           <span className={styles.vl} />
           <div className={styles.techIcons}>

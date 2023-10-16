@@ -1,22 +1,28 @@
 .container {
   background-color: $surface-color;
   width: 100%;
-  margin-top: 5%;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 .inner {
+  padding-left: 10%;
+  width: 50%;
   display: flex;
   flex-direction: column;
-  width: 80%;
-  margin-left: 9%;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+  @media (max-width: 768px) {
+    padding-left: 8%;
+  }
+  @media (max-width: 425px) {
+    padding-left: 9%;
+  }
 }
 .openingTag {
   display: flex;
-  flex-direction: row;
   align-items: center;
-  margin: 5px;
   color: $primary-color;
+  @media (max-width: 768px) {
+    font-size: 12px;
+  }
 }
 .arrow {
   color: $grey-vscode;
@@ -27,12 +33,10 @@
     animation-fill-mode: forwards;
   }
 }
-.text {
+.iconContainer {
   display: flex;
-  flex-direction: row;
-  align-items: center;
-
-  height: 400px;
+  align-items: stretch;
+  height: fit-content;
   opacity: 0;
   &.animate {
     animation: showHide 2s 2s;
@@ -40,30 +44,42 @@
   }
 
   .vl {
-    border-left: 2px solid $grey-vscode;
-    height: 100%;
-    margin-right: 20px;
-    margin-left: 25px;
+    border-right: 2px solid #4f5055;
+    height: auto;
+    padding-left: 20px;
   }
 }
 .closingTag {
   position: relative;
   left: 25px;
-  margin: 5px;
   color: $primary-color;
   &.animate {
     animation: slide 2s ease-in-out;
     animation-fill-mode: forwards;
   }
+  @media (max-width: 768px) {
+    font-size: 12px;
+  }
 }
 .techIcons {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  gap: 10px;
-  align-items: center;
-  width: 80%;
-  height: auto;
-  margin: auto;
+  gap: 50px;
+  padding: 5% 0 5% 10%;
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(5, 1fr);
+    gap: 30px;
+    scale: 0.9;
+  }
+  @media (max-width: 425px) {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    scale: 0.8;
+  }
+  @media (max-width: 375px) {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
 }
 
 @keyframes slide {
@@ -92,21 +108,5 @@
 
   to {
     transform: rotate(90deg);
-  }
-}
-@media (max-width: 768px) {
-  .container {
-    width: 100%;
-  }
-  .openingTag {
-    font-size: 12px;
-  }
-  .techIcons {
-    scale: 0.9;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 30px;
-  }
-  .closingTag {
-    font-size: 12px;
   }
 }

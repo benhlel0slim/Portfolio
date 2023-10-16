@@ -8,7 +8,7 @@ function Tech({ name, src, url }: Techs) {
   return (
     <section className={styles.container}>
       <Link href={url} target="_blank">
-        <Image src={src} alt={`logo of ${name}`} width={80} height={80} />
+        <Image src={src} alt={`logo of ${name}`} width={90} height={90} />
         <p>{name}</p>
       </Link>
     </section>

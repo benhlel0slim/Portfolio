@@ -3,6 +3,7 @@
   width: 100%;
   padding-top: 10px;
   padding-bottom: 10px;
+  box-sizing: border-box;
 }
 .inner {
   position: relative;
@@ -46,21 +47,8 @@
 
 .techIcons {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(min(70px, 100%), 1fr));
   gap: 50px;
-  padding: 5% 0 5% 10%;
-  @media (max-width: 768px) {
-    grid-template-columns: repeat(5, 1fr);
-    gap: 30px;
-    scale: 0.9;
-  }
-  @media (max-width: 425px) {
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    scale: 0.8;
-  }
-  @media (max-width: 375px) {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-  }
+  width: 100%;
+  box-sizing: border-box;
 }

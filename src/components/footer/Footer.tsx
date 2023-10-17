@@ -12,15 +12,14 @@ function Footer() {
       </Link>
       <p className={styles.text}>
         Coded with 💻 and ☕ by <b>Selim Ben Hlel</b>
-        <br /> Click
+        <br /> Check the{" "}
         <Link
           aria-label="Visit source code"
           href="https://github.com/benhlel0slim/Portfolio"
           target="_blank"
         >
-          here
+          source code
         </Link>
-        to check the source
       </p>
     </footer>
   );

@@ -27,8 +27,9 @@ function Landing() {
           <Image
             src={"/assets/profilePicture.svg"}
             alt="selim ben hlel picture portrait"
-            width={379}
-            height={366}
+            width={0}
+            height={0}
+            sizes="400px"
           />
         </div>
       </section>

@@ -33,16 +33,22 @@ function Landing() {
           />
         </div>
       </section>
-      <Link className={styles.email} href={EMAIL}>
+      <Link aria-label="Go to email" className={styles.email} href={EMAIL}>
         <EmailLink />
       </Link>
       <Arrow className={styles.arrow} />
       <div className={styles.socialMedia}>
         <VerticalLine className={styles.verticalLine} />
-        <Link href={"https://github.com/benhlel0slim"}>
+        <Link
+          aria-label="Go to github profile"
+          href={"https://github.com/benhlel0slim"}
+        >
           <Github className={`${styles.github} ${styles.socials}`} />
         </Link>
-        <Link href={"https://www.linkedin.com/in/selim-ben-hlel-4ab444254/"}>
+        <Link
+          aria-label="Go to Linked profile"
+          href={"https://www.linkedin.com/in/selim-ben-hlel-4ab444254/"}
+        >
           <LinkedIn className={`${styles.linkedIn} ${styles.socials}`} />
         </Link>
       </div>

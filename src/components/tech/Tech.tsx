@@ -7,7 +7,7 @@ import styles from "./tech.module.scss";
 function Tech({ name, src, url }: Techs) {
   return (
     <section className={styles.container}>
-      <Link href={url} target="_blank">
+      <Link aria-label={`Visit ${name} page`} href={url} target="_blank">
         <Image
           className={styles.tech}
           src={src}

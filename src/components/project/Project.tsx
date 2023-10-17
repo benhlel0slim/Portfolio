@@ -18,10 +18,20 @@ function Project({ title, images, description, url, techs }: Props) {
           <p>{description}</p>
         </div>
         <div className={styles.links}>
-          <Link href={url.source} target="_blank" className={styles.link}>
+          <Link
+            aria-label="Read more about code source"
+            href={url.source}
+            target="_blank"
+            className={styles.link}
+          >
             Check Source
           </Link>
-          <Link href={url.live} target="_blank" className={styles.link}>
+          <Link
+            aria-label="Open the app in browser"
+            href={url.live}
+            target="_blank"
+            className={styles.link}
+          >
             See Live
           </Link>
         </div>

@@ -1,5 +1,14 @@
+html {
+  font-size: 16px;
+  @media (max-width: 768px) {
+    font-size: 12px;
+  }
+  @media (max-width: 425px) {
+    font-size: 10px;
+  }
+}
+
 body {
-  font-family: Atkinson Hyperlegible, Arial, Helvetica, sans-serif;
   background-color: $background-color;
   color: $text-color;
   margin: 0;

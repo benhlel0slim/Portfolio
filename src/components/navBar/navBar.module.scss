@@ -23,7 +23,9 @@
   flex-direction: row;
   gap: 20px;
   margin-right: 45px;
+  font-size: 0.75rem;
   color: $primary-color;
+
   span {
     color: $text-color;
   }
@@ -33,9 +35,6 @@
   }
 }
 @media (max-width: 768px) {
-  .links {
-    font-size: 12px;
-  }
   .logo {
     margin-left: 30px;
   }

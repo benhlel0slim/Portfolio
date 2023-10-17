@@ -1,34 +1,30 @@
 .container {
+  position: relative;
   display: flex;
-  flex-direction: column;
-  align-items: baseline;
-  margin: auto;
-  min-height: 10vh;
+  align-items: center;
+  justify-content: center;
+  height: 10vh;
   background-color: $background-color;
-  text-align: start;
+  text-align: center;
+  width: 100%;
 }
 .email {
-  position: relative;
-  left: -740px;
-  font-size: small;
-  top: 50px;
+  position: absolute;
+  left: 0px;
+  font-size: 0.8rem;
+  top: 50%;
 }
 .text {
-  margin: auto;
   font-style: italic;
-  font-size: 13px;
+  font-size: 0.8rem;
+  max-width: 40%;
   a {
     @include hover-effect-tech;
     color: $text-color;
   }
 }
 @media (max-width: 768px) {
-  .text {
-    font-size: 7px;
-  }
   .email {
-    scale: 0.5;
-    left: -270px;
-    top: 23px;
+    visibility: hidden;
   }
 }

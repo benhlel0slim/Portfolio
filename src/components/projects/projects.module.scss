@@ -22,14 +22,7 @@
   }
 }
 .text {
-  display: flex;
-  flex-direction: row;
-  align-items: stretch;
-  height: fit-content;
-  opacity: 0;
-  > *:nth-child(2) {
-    padding: 20px 0;
-  }
+  @include inner-section;
 
   &.animate {
     animation: showHide 2s 2s;

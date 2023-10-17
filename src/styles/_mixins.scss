@@ -22,3 +22,15 @@
   margin: auto;
   padding: 20px 0px;
 }
+@mixin inner-section {
+  display: flex;
+  align-items: stretch;
+  height: fit-content;
+  opacity: 0;
+  > *:nth-child(2) {
+    padding: 10px 20px;
+    @media (max-width: 768px) {
+      padding: 5px 20px;
+    }
+  }
+}

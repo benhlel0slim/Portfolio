@@ -34,6 +34,7 @@ function Techs() {
             ))}
           </div>
         </div>
+        <span className={styles.invisible} />
 
         <div
           className={`${styles.closingTag} ${

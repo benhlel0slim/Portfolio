@@ -26,6 +26,7 @@ function Projects() {
           <Project {...project} key={project.title} />
         ))}
       </div>
+      <span className={styles.invisible} />
 
       <div
         className={`${styles.closingTag} ${

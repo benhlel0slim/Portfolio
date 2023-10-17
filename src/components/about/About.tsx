@@ -29,6 +29,7 @@ function About() {
           me in, and I made the exciting shift to become a front-end developer.
         </p>
       </div>
+      <span className={styles.invisible} />
       <div
         className={`${styles.closingTag} ${
           hasIntersected ? styles.animate : ""

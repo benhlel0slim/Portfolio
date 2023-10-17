@@ -7,6 +7,10 @@
   text-align: start;
   box-shadow: $box-shadow;
   @include section;
+  width: 60%;
+  @media (max-width: 425px) {
+    width: 80%;
+  }
 }
 
 .openingTag {

@@ -48,7 +48,14 @@
 .techIcons {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(min(70px, 100%), 1fr));
-  gap: 50px;
+  gap: 25px;
   width: 100%;
   box-sizing: border-box;
+
+  @media (max-width: 425px) {
+    gap: 20px;
+  }
+  @media (max-width: 375px) {
+    gap: 10px;
+  }
 }

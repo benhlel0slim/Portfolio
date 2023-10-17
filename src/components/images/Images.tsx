@@ -25,8 +25,16 @@ function Images({ images }: { images: Project["images"] }) {
         ))}
       </div>
       <div className={styles.navigation}>
-        <button id="scrollLeft" onClick={() => handleScroll(-1)} />
-        <button id="scrollRight" onClick={() => handleScroll(1)} />
+        <button
+          id="scroll-button-left"
+          aria-label="scroll left"
+          onClick={() => handleScroll(-1)}
+        />
+        <button
+          id="scroll-button-right"
+          aria-label="scroll right"
+          onClick={() => handleScroll(1)}
+        />
       </div>
     </section>
   );

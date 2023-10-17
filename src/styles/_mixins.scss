@@ -14,3 +14,11 @@
     opacity: 0.65;
   }
 }
+
+@mixin section {
+  display: flex;
+  box-sizing: border-box;
+  width: 80%;
+  margin: auto;
+  padding: 20px 0px;
+}

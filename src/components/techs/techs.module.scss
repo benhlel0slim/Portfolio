@@ -5,16 +5,8 @@
   padding-bottom: 10px;
 }
 .inner {
-  padding-left: 10%;
-  width: 50%;
-  display: flex;
   flex-direction: column;
-  @media (max-width: 768px) {
-    padding-left: 8%;
-  }
-  @media (max-width: 425px) {
-    padding-left: 9%;
-  }
+  @include section;
 }
 .openingTag {
   display: flex;

@@ -1,10 +1,9 @@
 .container {
-  display: flex;
   flex-direction: column;
   align-items: baseline;
   min-height: 20vh;
   background-color: $background-color;
-  width: 80%;
+  @include section;
 }
 .openingTag {
   display: flex;

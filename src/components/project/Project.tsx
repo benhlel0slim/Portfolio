@@ -12,7 +12,7 @@ function Project({ title, images, description, url, techs }: Props) {
       <div className={styles.projectImage}>
         <Images images={images} />
       </div>
-      <div>
+      <div className={styles.details}>
         <div className={styles.text}>
           <Tag type="self-closing">{title}</Tag>
           <p>{description}</p>

@@ -10,5 +10,10 @@
     padding-right: 3px;
     bottom: 0px;
     background-color: $background-color;
+    font-size: 0.8rem;
+    @media (max-width: 425px) {
+      font-size: 1.4rem;
+      left: 20px;
+    }
   }
 }

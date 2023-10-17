@@ -11,7 +11,8 @@ function Footer() {
         <EmailLink />
       </Link>
       <p className={styles.text}>
-        Coded with 💻 and ☕ by <b>Selim Ben Hlel</b> Click
+        Coded with 💻 and ☕ by <b>Selim Ben Hlel</b>
+        <br /> Click
         <Link href="https://github.com/benhlel0slim/Portfolio"> here </Link>
         to check the source
       </p>

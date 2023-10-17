@@ -23,6 +23,7 @@
   overflow-x: scroll;
   display: flex;
   width: 200px;
+  border-radius: 20px;
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
   &::-webkit-scrollbar {

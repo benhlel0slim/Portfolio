@@ -13,7 +13,7 @@ export const PROJECTS: Project[] = [
     ],
 
     description:
-      "App for booking restaurants with a customer facing UI for end-users to book for a restaurant and an admin side for the owner to manage reservations. How to test => Login: test@gmail.com, Password: Test123!!!",
+      "App for booking restaurants with a customer facing UI for end-users to book for a restaurant and an admin side for the owner to manage reservations. { How to test => Login: test@gmail.com, Password: Test123!!! }",
 
     url: {
       source: "https://github.com/benhlel0slim/booking-app",

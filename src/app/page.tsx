@@ -1,3 +1,4 @@
+"use client";
 import styles from "./page.module.css";
 import About from "@/components/about/About";
 import Footer from "@/components/footer/Footer";

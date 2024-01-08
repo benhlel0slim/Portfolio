@@ -2,8 +2,13 @@ import React, { useRef } from "react";
 import Image from "../projectImage/ProjectImage";
 import { Project } from "@/types/project";
 import styles from "./images.module.scss";
+import { Unpacked } from "@/types/utils";
 
-function Images({ images }: { images: Project["images"] }) {
+function Images({
+  images,
+}: {
+  images: Unpacked<Project["en"]>["images"] | Unpacked<Project["fr"]>["images"];
+}) {
   const ref = useRef<HTMLDivElement>(null);
 
   const handleScroll = (direction: -1 | 1) => {

@@ -3,11 +3,12 @@ import React, { useRef } from "react";
 import Tag from "../tag/Tag";
 import Arrow from "../arrow/Arrow";
 import styles from "./projects.module.scss";
-import { PROJECTS } from "@/constant/projects";
-import Project from "../project/Project";
 import { useIsVisible } from "@/hook/useIsVisible";
+import { DictionaryProps } from "@/types/dictionary";
+import ProjectTranslation from "../projectTranslation/ProjectTranslation";
+import { Locale } from "../../../i18n.config";
 
-function Projects() {
+function Projects({ data, lang }: { data: DictionaryProps; lang: Locale }) {
   const ref = useRef<HTMLElement>(null);
   const { hasIntersected } = useIsVisible(ref);
 
@@ -17,14 +18,12 @@ function Projects() {
         <Arrow
           className={`${styles.arrow} ${hasIntersected ? styles.animate : ""}`}
         />
-        <Tag type="opening">Projects</Tag>
+        <Tag type="opening">{data.projects.tag}</Tag>
       </div>
 
       <div className={`${styles.text} ${hasIntersected ? styles.animate : ""}`}>
         <span className={styles.vl} />
-        {PROJECTS.map((project) => (
-          <Project {...project} key={project.title} />
-        ))}
+        <ProjectTranslation lang={lang} />
       </div>
       <span className={styles.invisible} />
 
@@ -33,7 +32,7 @@ function Projects() {
           hasIntersected ? styles.animate : ""
         }`}
       >
-        <Tag type="closing">Projects</Tag>
+        <Tag type="closing">{data.projects.tag}</Tag>
       </div>
     </article>
   );

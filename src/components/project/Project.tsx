@@ -6,7 +6,14 @@ import Badge from "../badge/badge";
 import styles from "./project.module.scss";
 import Images from "../images/Images";
 
-function Project({ title, images, description, url, techs }: Props) {
+function Project({
+  title,
+  images,
+  description,
+  url,
+  techs,
+  links,
+}: Props["en"][number] | Props["fr"][number]) {
   return (
     <section className={styles.container}>
       <div className={styles.projectImage}>
@@ -24,7 +31,7 @@ function Project({ title, images, description, url, techs }: Props) {
             target="_blank"
             className={styles.link}
           >
-            Check Source
+            {links.source}
           </Link>
           <Link
             aria-label="Open the app in browser"
@@ -32,7 +39,7 @@ function Project({ title, images, description, url, techs }: Props) {
             target="_blank"
             className={styles.link}
           >
-            See Live
+            {links.live}
           </Link>
         </div>
 

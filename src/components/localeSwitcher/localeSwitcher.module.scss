@@ -1,0 +1,15 @@
+.lang {
+  a {
+    font-size: inherit;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0 0.3rem;
+    transition: ease 0.2s;
+    text-decoration: none;
+    color: $primary-color;
+  }
+  .inactive {
+    color: $hover-color;
+  }
+}

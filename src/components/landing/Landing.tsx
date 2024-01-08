@@ -8,20 +8,16 @@ import Arrow from "../arrow/Arrow";
 import VerticalLine from "../socialMedia/VerticalLine";
 import Github from "../socialMedia/Github";
 import LinkedIn from "../socialMedia/LinkedIn";
+import { DictionaryProps } from "@/types/dictionary";
 
-function Landing() {
+function Landing({ data }: { data: DictionaryProps }) {
   return (
     <article className={styles.container}>
       <section className={styles.inner}>
         <div className={styles.bio}>
-          <h1>Selim Ben Hlel.</h1>
-          <h2>I create things on the web.</h2>
-          <p>
-            Hello ! I am a JavaScript developer specializing in user interfaces
-            <br />
-            and front-end based in Tunisia 📍.
-            <br /> I build web apps 🌐 with the user in mind.
-          </p>
+          <h1>{data.landingPage.name}</h1>
+          <h2>{data.landingPage.title}</h2>
+          <p>{data.landingPage.description}</p>
         </div>
         <div className={styles.img}>
           <Image

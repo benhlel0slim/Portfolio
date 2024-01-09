@@ -71,8 +71,8 @@ export const PROJECTS: Project = {
       },
 
       links: {
-        source: "Verifier la source",
-        live: "Voir en direct",
+        source: "Voir le code source",
+        live: "Visiter",
       },
 
       techs: [

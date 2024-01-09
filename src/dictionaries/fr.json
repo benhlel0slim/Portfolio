@@ -1,6 +1,6 @@
 {
   "navbar": {
-    "about": "À propos",
+    "about": "À_propos",
     "project": "Projets",
     "tech": "Tech"
   },
@@ -10,14 +10,14 @@
     "description": "Bonjour ! Je suis un développeur JavaScript spécialisé dans les interfaces \nutilisateur et front-end basé en Tunisie 📍.\nJe crée des applications Web 🌐 en pensant à l'utilisateur."
   },
   "about": {
-    "tag": "À propos",
+    "tag": "À_propos",
     "description": "À 32 ans, je me suis lancé dans un parcours dynamique dans le monde du développement front-end, passant de mon expérience d'architecte à la création d'expériences numériques immersives. Alors que ma carrière initiale était ancrée dans la création d'espaces physiques 🏗️, j'ai vite découvert ma profonde fascination pour le paysage numérique en constante évolution 💻. Le potentiel illimité de créativité et de résolution de problèmes dans le développement Web, en particulier avec JavaScript, m'a attiré et j'ai pris la décision passionnante de devenir développeur front-end."
   },
   "projects": {
     "tag": "Projets"
   },
   "footer": {
-    "description": "Codé avec 💻 et ☕ par Selim Ben Hlel. Vérifier le ",
+    "description": "Codé avec 💻 et ☕ par Selim Ben Hlel. Voir le ",
     "link": "Code Source"
   }
 }

@@ -12,4 +12,7 @@
   .inactive {
     color: $hover-color;
   }
+  .disabled {
+    pointer-events: none;
+  }
 }

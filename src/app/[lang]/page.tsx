@@ -1,11 +1,11 @@
 import styles from "./page.module.css";
-import About from "@/components/about";
-import Footer from "@/components/footer";
-import GoogleTracking from "@/components/googleTracking/GoogleTracking";
-import Landing from "@/components/landing";
-import NavBar from "@/components/navBar";
-import Projects from "@/components/projects";
-import Techs from "@/components/techs/Techs";
+import About from "@/app/components/about";
+import Footer from "@/app/components/footer";
+import GoogleTracking from "@/app/components/googleTracking/GoogleTracking";
+import Landing from "@/app/components/landing";
+import NavBar from "@/app/components/navBar";
+import Projects from "@/app/components/projects";
+import Techs from "@/app/components/techs/Techs";
 import { Locale } from "../../../i18n.config";
 
 export default function Home({ params }: { params: { lang: Locale } }) {

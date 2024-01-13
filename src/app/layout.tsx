@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Atkinson_Hyperlegible } from "next/font/google";
-import "../styles/global.scss";
+import "./styles/global.scss";
 
 const atkinson = Atkinson_Hyperlegible({
   weight: ["400", "700"],

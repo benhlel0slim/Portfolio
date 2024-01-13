@@ -1,0 +1,23 @@
+{
+  "navbar": {
+    "about": "About",
+    "project": "Projects",
+    "tech": "Tech"
+  },
+  "landingPage": {
+    "name": "Selim Ben Hlel.",
+    "title": "I create things on the web.",
+    "description": "Hello ! I am a JavaScript developer specializing in user interfaces \nand front-end based in Tunisia 📍.\nI build web apps 🌐 with the user in mind."
+  },
+  "about": {
+    "tag": "About",
+    "description": "At 32 years old, I've embarked on a dynamic journey in the world of front-end development, transitioning from my background as an architect to crafting immersive digital experiences. While my initial career was rooted in the creation of physical spaces 🏗️, I soon discovered my deep fascination with the ever-evolving digital landscape 💻. The limitless potential for creativity and problem-solving in web development, particularly with JavaScript, drew me in, and I made the exciting shift to become a front-end developer."
+  },
+  "projects": {
+    "tag": "Projects"
+  },
+  "footer": {
+    "description": "Coded with 💻 and ☕ by Selim Ben Hlel. Check the ",
+    "link": "Source Code"
+  }
+}

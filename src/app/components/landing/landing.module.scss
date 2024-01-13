@@ -1,0 +1,123 @@
+.container {
+  position: relative;
+  width: 100%;
+}
+
+.inner {
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  @include section;
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
+  @media (max-width: 375px) {
+    height: 120vh;
+  }
+}
+
+.bio {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 2.3rem;
+
+  h1 {
+    text-wrap: nowrap;
+  }
+  h2 {
+    font-size: 2rem;
+    padding: 10px 0;
+  }
+  p {
+    white-space: pre-line;
+    font-size: 1.3rem;
+  }
+}
+
+.img {
+  > * {
+    width: 380px;
+    height: auto;
+  }
+}
+
+.email {
+  position: absolute;
+  bottom: 35px;
+  left: 0px;
+  text-decoration: none;
+}
+
+.arrow {
+  position: absolute;
+  bottom: 45px;
+  left: 49%;
+}
+
+.socialMedia {
+  position: fixed;
+  right: 33px;
+  bottom: 31px;
+  z-index: 3;
+}
+
+.verticalLine {
+  position: absolute;
+  right: 32px;
+  bottom: 45px;
+}
+
+.socials {
+  position: absolute;
+  @include hover-effect;
+  &.github {
+    right: 19px;
+    bottom: 90px;
+    background-color: $background-color;
+    border-radius: 20px;
+  }
+  &.linkedIn {
+    right: 19px;
+    bottom: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  .img {
+    scale: 0.8;
+  }
+
+  .arrow {
+    scale: 0.7;
+    bottom: 30px;
+  }
+
+  .socialMedia {
+    scale: 0.7;
+    bottom: 20px;
+    right: 15px;
+  }
+
+  .email {
+    bottom: 30px;
+  }
+}
+
+@media (max-width: 425px) {
+  .arrow {
+    scale: 0.5;
+  }
+
+  .socialMedia {
+    right: 10px;
+  }
+
+  .email {
+    scale: 0.6;
+    left: -40px;
+  }
+  .img {
+    scale: 0.7;
+  }
+}

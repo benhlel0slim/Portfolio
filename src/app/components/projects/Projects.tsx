@@ -23,7 +23,9 @@ function Projects({ data, lang }: { data: DictionaryProps; lang: Locale }) {
 
       <div className={`${styles.text} ${hasIntersected ? styles.animate : ""}`}>
         <span className={styles.vl} />
-        <ProjectTranslation lang={lang} />
+        <div className={styles.projects}>
+          <ProjectTranslation lang={lang} />
+        </div>
       </div>
       <span className={styles.invisible} />
 

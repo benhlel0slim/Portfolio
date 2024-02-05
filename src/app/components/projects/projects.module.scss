@@ -26,6 +26,17 @@
     @include vl;
   }
 }
+.projects {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  > *:nth-child(1) {
+    flex-direction: row-reverse;
+    @media (max-width: 768px) {
+      flex-direction: column-reverse;
+    }
+  }
+}
 
 .invisible {
   height: 1rem;
